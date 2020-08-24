@@ -6,6 +6,12 @@ Created on Fri Jul 17 10:38:23 2020
 """
 import math
 
+def factorial(x):
+    if (x == 1):
+        return 1
+    else:
+        return x * factorial(x - 1)
+
 
 def isPalyndrome(number):
     return str(number) == str(number)[::-1]
