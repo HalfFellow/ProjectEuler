@@ -94,3 +94,76 @@ def nthPrime(nth):
     
 def sumofdigits(x):
     return sum([int(i) for i in str(x)])
+
+
+def Fibonacci_NthTerm(nth):
+        
+    a_n1 = 2
+    a_n0 = 1
+        
+    if (nth == 1):
+        return a_n0
+    elif (nth == 2):
+        return a_n1
+    else:
+        i = 2
+        while i < nth:
+            a_ntemp = a_n1
+            a_n1 = a_n0 + a_n1
+            a_n0 = a_ntemp
+            i += 1
+            
+        return a_n1
+        
+def Fibonacci_nTermList(n):
+        
+    a_n1 = 2
+    a_n0 = 1
+        
+    termlist = []
+        
+    if (n == 1):
+        termlist.append(a_n0)
+        return termlist
+    elif (n == 2):
+        termlist.append(a_n0)
+        termlist.append(a_n1)
+        return termlist
+    else:
+        termlist.append(a_n0)
+        termlist.append(a_n1) 
+        i = 2
+        while i < n:
+            a_ntemp = a_n1
+            a_n1 = a_n0 + a_n1
+            a_n0 = a_ntemp
+            termlist.append(a_n1)
+            i += 1
+                
+        return termlist
+        
+def Fibonacci_TermListUpTo(bound):
+    a_n1 = 2
+    a_n0 = 1
+        
+    termlist = []
+        
+    if (bound == 1):
+        termlist.append(a_n0)
+        return termlist
+    elif (bound == 2):
+        termlist.append(a_n0)
+        termlist.append(a_n1)
+        return termlist
+    else:
+        termlist.append(a_n0)
+        termlist.append(a_n1)            
+        while a_n1 < bound:
+            a_ntemp = a_n1
+            a_n1 = a_n0 + a_n1
+            a_n0 = a_ntemp
+                
+            if a_n1 < bound:
+                termlist.append(a_n1)
+            
+        return termlist   
