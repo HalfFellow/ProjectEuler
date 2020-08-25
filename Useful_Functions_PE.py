@@ -13,7 +13,7 @@ def factorial(x):
         return x * factorial(x - 1)
 
 
-def isPalyndrome(number):
+def isPalindrome(number):
     return str(number) == str(number)[::-1]
 
    
