@@ -50,6 +50,24 @@ def UniquePrimeFactors(Number):
     return [prime for prime in PrimeList1 if (Number % prime) == 0]
 
 
+def CompletePrimeFactors(Number):
+    
+    Prime_to_test = PrimeList(Number)
+    print(Prime_to_test)
+    Prime_Factors = []
+    i = 0
+    
+    while Number != 1:
+        if Number % Prime_to_test[i] == 0:
+            Prime_Factors.append(Prime_to_test[i])
+            Number /= Prime_to_test[i]
+            i = 0
+        else:
+            i += 1
+    
+    return Prime_Factors
+
+
 def nthPrime(nth): 
     if nth == 1:
         return 2
