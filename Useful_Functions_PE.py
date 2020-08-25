@@ -91,3 +91,6 @@ def nthPrime(nth):
         return small_prime[nth - 1]
     else:
         return PrimeList(int(math.ceil(upper)))[nth - 1]
+    
+def sumofdigits(x):
+    return sum([int(i) for i in str(x)])
