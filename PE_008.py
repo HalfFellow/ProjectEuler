@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Project Euler
-# Problem 007: 10001st Prime
+# Problem 008: Largest product in a series
 # Runtime : 3 ms
 
 import time
