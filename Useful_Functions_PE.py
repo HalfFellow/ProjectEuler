@@ -167,3 +167,9 @@ def Fibonacci_TermListUpTo(bound):
                 termlist.append(a_n1)
             
         return termlist   
+    
+def TriangularNumber(number):
+    return number * (number + 1) / 2
+
+def DivisorFactors(number):
+    return [i for i in range(1, int(((number + 1) ** 0.5) // 1)) if int(number) % i == 0]
