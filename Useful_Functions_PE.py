@@ -188,6 +188,4 @@ def ProperDivisorFactors(number):
     
     return Divisor_List
 
-print(ProperDivisorFactors(12))
-
 
