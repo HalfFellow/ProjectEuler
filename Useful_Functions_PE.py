@@ -98,7 +98,7 @@ def sumofdigits(x):
 
 def Fibonacci_NthTerm(nth):
         
-    a_n1 = 2
+    a_n1 = 1
     a_n0 = 1
         
     if (nth == 1):
@@ -117,7 +117,7 @@ def Fibonacci_NthTerm(nth):
         
 def Fibonacci_nTermList(n):
         
-    a_n1 = 2
+    a_n1 = 1
     a_n0 = 1
         
     termlist = []
@@ -143,7 +143,7 @@ def Fibonacci_nTermList(n):
         return termlist
         
 def Fibonacci_TermListUpTo(bound):
-    a_n1 = 2
+    a_n1 = 1
     a_n0 = 1
         
     termlist = []
