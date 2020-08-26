@@ -173,3 +173,21 @@ def TriangularNumber(number):
 
 def DivisorFactors(number):
     return [i for i in range(1, int(((number + 1) ** 0.5) // 1)) if int(number) % i == 0]
+
+def ProperDivisorFactors(number):
+    if number == 1:
+        return []
+    elif number == 2:
+        return [1]
+    else:
+       Divisor_List = [f(i) for i in range(1, int((number ** 0.5) // 1 + 1)) for f in (lambda i: i, lambda i: int(number/i)) if number % i == 0]
+       Divisor_List.remove(number)
+       if (number ** 0.5) in Divisor_List:
+           print(1)
+           Divisor_List.remove(number ** 0.5)
+    
+    return Divisor_List
+
+print(ProperDivisorFactors(12))
+
+
