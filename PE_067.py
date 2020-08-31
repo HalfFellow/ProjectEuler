@@ -2,7 +2,7 @@
 
 # Project Euler
 # Problem 067: Maximum Path Sum II
-# Runtime : 0 ms
+# Runtime : 2 ms
 
 import time
 
